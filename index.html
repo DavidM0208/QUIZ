@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<title>Formulario | Registro</title>
+</head>
+<body>
+	<div class="container mt-3 mb-3">
+		<h1 class="titulo">Registro de usuarios</h1>
+		<hr>
+		<div class="row">
+			<div class="container-fluid">
+				<div class="caja-principal card">
+					<div class="caja-principal-2 card-body">
+						<form class="formulario">
+							<label class="form-label">Nombres:</label>
+							<input type="text" id="nombre" class="form-control">
+							<label class="form-label">Apellidos:</label>
+							<input type="text" id="apellido" class="form-control">
+							<label class="form-label">Tipo de documento:</label>
+							<select class="form-select">
+								<option selected>Seleccione una opción</option>
+								<option value="primera__opcion">Tarjeta de identidad</option>
+								<option value="segunda__opcion">Cédula de ciudadanía</option>
+							</select>
+							<label class="form-label">Número de documento:</label>
+							<input type="number" id="numero__documento" class="form-control">
+							<label>¿En que rango de edad se encuentra?</label>
+							<div class="form-check">
+								<input type="radio" id="opcion__edad" name="opcion__edad" class="form-check-input" for="opcion__edad1">
+								<lable class="form-check-label" for="opcion__edad1">9 a 13</label>
+							</div>
+							<div class="form-check">
+								<input type="radio" id="opcion__edad" name="opcion__edad" class="form-check-input" for="opcion__edad2">
+								<label class="form-check-label" for="opcion__edad2">14 a 18</label>
+							</div>
+							<div class="form-check">
+								<input type="radio" id="opcion__edad" name="opcion__edad" class="form-check-input" for="opcion__edad3">
+								<label class="form-check-label" for="opcion__edad3">más de 18</label>
+							</div>
+							<label class="form-label">Dirección de residencia:</label>
+							<input type="text" id="direccion__residencia" class="form-control">
+							<label class="form-label">Curso al que perteneces:</label>
+							<input type="text" id="curso" class="form-control">
+							<label class="form-label">Director de curso:</label>
+							<input type="text" id="director__curso" class="form-control">
+							<a href="" class="boton btn btn-primary" id="registrar">Registarse</a>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		document.addEventListener("DOMContentLoaded", function(){
+			const botonRegistro = document.getElementById("registrar");
+			botonRegistro.addEventListener("click", function(){
+				alert("Se registro exitosamente")
+			});
+		});
+	</script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</html>
